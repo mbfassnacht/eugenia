@@ -47,7 +47,7 @@ const Title = styledComponents.h2`
 `;
 
 const ColaborationContainer = styledComponents.div`
-  margin: 40px;
+  margin: 40px auto;
   background-color: rgb(253, 240, 212);
   padding: 10px;
   border-radius: 40px;
