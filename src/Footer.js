@@ -9,7 +9,7 @@ function Footer() {
       </Link>{" "}
       y{" "}
       <Link target="_blank" href="https://twitter.com/eugesosgenia">
-        @Twitter
+        Twitter
       </Link>{" "}
       para mantenerte al tanto de lo que vamos haciendo para seguir adelante con
       este desafío.

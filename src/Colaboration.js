@@ -11,7 +11,7 @@ function Colaboration() {
             <p>Cuenta BROU</p>
             <p>A nombre de Florencia Mazetta</p>
             <p>CA 001361713-0002 (Pesos Uruguayos)</p>
-            <p>CA 001361713-0003 (Dolares)</p>
+            <p>CA 001361713-0003 (Dólares)</p>
           </ColaborationDescription>
         </ColaborationMethod>
         <ColaborationMethod>
