@@ -1,11 +1,20 @@
 
 # CONTRIBUTING
 
+## How to contribute
+ - Checkout the project
+ - do the changes
+ - create a Pull Request with your changes
+ - The Pull Request will be checked and approved
+ - After the Pull Request is approved the code will be merged and will be automatically deployed in the [website](https://eugesosgenia.com/)
+
+Thanks!! revolving_hearts:
+
 ## Deploy
 The site is deployed with GITHUB ACTIONS in https://eugesosgenia.com/ after a merge in main branch.
 
 
-## For development -> Available Scripts
+## Available Scripts
 
 This project is created with create-react-app
 
