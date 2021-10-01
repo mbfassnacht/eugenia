@@ -10,6 +10,8 @@ The site is deployed with GITHUB ACTIONS in https://eugesosgenia.com/ after a me
 
 ## For development -> Available Scripts
 
+This project is created with create-react-app
+
 In the project directory, you can run:
 
 ### `yarn start`
