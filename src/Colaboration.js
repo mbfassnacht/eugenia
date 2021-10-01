@@ -9,7 +9,7 @@ function Colaboration() {
           <ColaborationTitle>Desde URUGUAY</ColaborationTitle>
           <ColaborationDescription>
             <p>Cuenta BROU</p>
-            <p>A nombre de Florencia Mazetta</p>
+            <p>A nombre de Florencia Mazzetta</p>
             <p>CA 001361713-00002 (Pesos Uruguayos)</p>
             <p>CA 001361713-00003 (Dólares)</p>
           </ColaborationDescription>
