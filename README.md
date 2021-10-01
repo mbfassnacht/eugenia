@@ -1,12 +1,12 @@
 # EuGENIA
 
-es_ES - Este proyecto abierto es para contribuir con la causa de EuGENIA. 
+:es: - Este proyecto abierto es para contribuir con la causa de EuGENIA. 
 
-en_US - This project is to contribute with EuGENIA. 
+:uk: - This project is to contribute with EuGENIA. 
 
-#
+## For Contributors
 
-es_ES - Para contribuir con la construccion del sitio de EuGENIA puedes visitar [CONTRIBUTING.md](https://github.com/mbfassnacht/eugenia/blob/main/CONTRIBUTING.md)
+:es: - Para contribuir con la construccion del sitio de EuGENIA puedes visitar [CONTRIBUTING.md](https://github.com/mbfassnacht/eugenia/blob/main/CONTRIBUTING.md)
 
-en_US - For contribute with EuGENIA website please check our [CONTRIBUTING.md](https://github.com/mbfassnacht/eugenia/blob/main/CONTRIBUTING.md)
+:uk: - For contribute with EuGENIA website please check our [CONTRIBUTING.md](https://github.com/mbfassnacht/eugenia/blob/main/CONTRIBUTING.md)
 
