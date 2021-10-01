@@ -10,13 +10,9 @@
 
 Thanks!! :revolving_hearts:
 
-## Deploy
-The site is deployed with GITHUB ACTIONS in https://eugesosgenia.com/ after a merge in main branch.
-
-
 ## Available Scripts
 
-This project is created with create-react-app
+This project is created with create-react-app Learn more [here](https://github.com/facebook/create-react-app)
 
 In the project directory, you can run:
 
