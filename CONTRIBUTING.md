@@ -3,10 +3,10 @@
 
 ## How to contribute
  - Checkout the project
- - do the changes
- - create a Pull Request with your changes
+ - Do the changes
+ - Create a Pull Request with your changes
  - The Pull Request will be checked and approved
- - After the Pull Request is approved the code will be merged and will be automatically deployed in the [website](https://eugesosgenia.com/)
+ - The code will be merged and will be automatically deployed in the [website](https://eugesosgenia.com/)
 
 Thanks!! :revolving_hearts:
 
