@@ -3,7 +3,7 @@
 ## :es: Español
 
 ### Motivo
-Este proyecto abierto es para contribuir con la causa de EuGENIA. 
+Este proyecto abierto es para contribuir con el sitio web de EuGENIA. 
 
 ### Para Contribuir
 
@@ -16,8 +16,7 @@ El sitio se encuentra [aquí](https://eugesosgenia.com/)
 ## :uk: English
 
 ### Motivation
-This project is to contribute with EuGENIA. 
-
+This project is to contribute with the website for EuGENIA. 
 
 ### For Contributors
 
