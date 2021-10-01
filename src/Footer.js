@@ -4,11 +4,19 @@ function Footer() {
   return (
     <FooterContainer className="description">
       Unite a @EugeSosGenia en{" "}
-      <Link target="_blank" href="https://www.instagram.com/EugeSosGenia/">
+      <Link
+        rel="noreferrer"
+        target="_blank"
+        href="https://www.instagram.com/EugeSosGenia/"
+      >
         Instagram
       </Link>{" "}
       y{" "}
-      <Link target="_blank" href="https://twitter.com/eugesosgenia">
+      <Link
+        rel="noreferrer"
+        target="_blank"
+        href="https://twitter.com/eugesosgenia"
+      >
         Twitter
       </Link>{" "}
       para mantenerte al tanto de lo que vamos haciendo para seguir adelante con

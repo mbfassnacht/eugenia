@@ -17,8 +17,13 @@ function Colaboration() {
         <ColaborationMethod>
           <ColaborationTitle>Desde el EXTERIOR </ColaborationTitle>
           <ColaborationDescription>
-            <p>Paypal</p>
-            <p>Aca el boton</p>
+            <Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.paypal.com/paypalme/eugesosgenia"
+            >
+              Paypal
+            </Link>
           </ColaborationDescription>
         </ColaborationMethod>
       </ColaborationList>
@@ -30,6 +35,12 @@ const ColaborationList = styledComponents.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+`;
+
+const Link = styledComponents.a`
+  color: rgb(205, 140, 193);
+  font-weight: 600;
+  text-decoration: none;
 `;
 
 const ColaborationMethod = styledComponents.div`
