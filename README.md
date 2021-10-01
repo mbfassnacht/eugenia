@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# EuGENIA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+es_ES - Este proyecto abierto es para contribuir con la causa de EuGENIA. 
+en_US - This project is to contribute with EuGENIA. 
 
-## Available Scripts
+## Deploy
+The site is deployed with GITHUB ACTIONS in https://eugesosgenia.com/ after a merge in main branch.
+
+
+## For development -> Available Scripts
 
 In the project directory, you can run:
 
