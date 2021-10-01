@@ -1,4 +1,4 @@
-# EuGENIA
+# EuGENIA :revolving_hearts:
 
 :es: - Este proyecto abierto es para contribuir con la causa de EuGENIA. 
 
