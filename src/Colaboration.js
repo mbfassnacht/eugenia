@@ -17,8 +17,8 @@ function Colaboration() {
           <ColaborationDescription>
             <p>{translate(language, "bankAccount")}</p>
             <p>{translate(language, "inNameOf")}</p>
-            <p>CA 001361713-0002 ({translate(language, "uruguayanPesos")})</p>
-            <p>CA 001361713-0003 ({translate(language, "dolars")})</p>
+            <p>CA 001361713-00002 ({translate(language, "uruguayanPesos")})</p>
+            <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
           </ColaborationDescription>
         </ColaborationMethod>
         <ColaborationMethod>
