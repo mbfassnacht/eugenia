@@ -1,10 +1,12 @@
 {
   "english": "English",
   "spanish": "Español",
+  "portuguese": "Português",
   "thanksForJoining": "¡Gracias por sumarte!",
   "waysToContribute": "Medios para colaborar",
   "fromUruguay": "Desde URUGUAY",
-  "fromForeinger": "Desde el EXTERIOR",
+  "fromForeinger": "De todas partes del mundo",
+  "fromBrazil": "Desde BRASIL",
   "bankAccount": "Cuenta BROU",
   "inNameOf": "A nombre de Florencia Mazzetta",
   "dolars": "Dólares",

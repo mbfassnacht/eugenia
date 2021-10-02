@@ -10,17 +10,32 @@ function Colaboration() {
     <ColaborationContainer>
       <Title>{translate(language, "waysToContribute")}</Title>
       <ColaborationList>
-        <ColaborationMethod>
-          <ColaborationTitle>
-            {translate(language, "fromUruguay")}
-          </ColaborationTitle>
-          <ColaborationDescription>
-            <p>{translate(language, "bankAccount")}</p>
-            <p>{translate(language, "inNameOf")}</p>
-            <p>CA 001361713-00002 ({translate(language, "uruguayanPesos")})</p>
-            <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
-          </ColaborationDescription>
-        </ColaborationMethod>
+        {language !== "pr_BR" && (
+          <ColaborationMethod>
+            <ColaborationTitle>
+              {translate(language, "fromUruguay")}
+            </ColaborationTitle>
+            <ColaborationDescription>
+              <p>{translate(language, "bankAccount")}</p>
+              <p>{translate(language, "inNameOf")}</p>
+              <p>
+                CA 001361713-00002 ({translate(language, "uruguayanPesos")})
+              </p>
+              <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
+            </ColaborationDescription>
+          </ColaborationMethod>
+        )}
+        {language === "pr_BR" && (
+          <ColaborationMethod>
+            <ColaborationTitle>
+              {translate(language, "fromBrazil")}
+            </ColaborationTitle>
+            <ColaborationDescription>
+              <p>{translate(language, "bankAccount")}</p>
+              <p>{translate(language, "inNameOf")}</p>
+            </ColaborationDescription>
+          </ColaborationMethod>
+        )}
         <ColaborationMethod>
           <ColaborationTitle>
             {translate(language, "fromForeinger")}

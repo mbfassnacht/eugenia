@@ -20,6 +20,12 @@ function Languages() {
       >
         {translate(language, "english")}
       </LanguageButton>
+      <LanguageButton
+        isSelected={language === "pr_BR"}
+        onClick={() => setLanguage("pr_BR")}
+      >
+        {translate(language, "portuguese")}
+      </LanguageButton>
     </LanguageList>
   );
 }
@@ -27,7 +33,7 @@ function Languages() {
 export default Languages;
 
 const LanguageList = styledComponents.div`
-  max-width: 180px;
+  max-width: 280px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
