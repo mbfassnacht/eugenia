@@ -1,17 +1,22 @@
 import styledComponents from "styled-components";
+import { Context } from "./context/context";
+import React from "react";
+import { translate } from "./Translator";
 
 function Footer() {
+  const { language } = React.useContext(Context);
+
   return (
     <FooterContainer className="description">
-      Unite a @EugeSosGenia en{" "}
+      {translate(language, "followUsIn")}
       <Link
         rel="noreferrer"
         target="_blank"
         href="https://www.instagram.com/EugeSosGenia/"
       >
         Instagram
-      </Link>{" "}
-      y{" "}
+      </Link>
+      {translate(language, "and")}
       <Link
         rel="noreferrer"
         target="_blank"
@@ -19,8 +24,7 @@ function Footer() {
       >
         Twitter
       </Link>{" "}
-      para mantenerte al tanto de lo que vamos haciendo para seguir adelante con
-      este desafío.
+      {translate(language, "followReason")}
     </FooterContainer>
   );
 }

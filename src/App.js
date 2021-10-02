@@ -1,31 +1,32 @@
 import styledComponents from "styled-components";
 import Background from "./Background";
 import Colaboration from "./Colaboration";
+import Languages from "./Languages";
 import Description from "./Description";
 import Footer from "./Footer";
+import Thanks from "./Thanks";
+
+import { Provider } from "./context/context";
+import React from "react";
 
 function App() {
   return (
-    <AppContainer>
-      <HeaderContainer>
-        <EuContainer>Eu</EuContainer>
-        <GeniaContainer>GENIA</GeniaContainer>
-      </HeaderContainer>
-      <Description />
-      <ThanksContainer>¡Gracias por sumarte!</ThanksContainer>
-      <Colaboration />
-      <Footer />
-      <Background />
-    </AppContainer>
+    <Provider>
+      <AppContainer>
+        <HeaderContainer>
+          <EuContainer>Eu</EuContainer>
+          <GeniaContainer>GENIA</GeniaContainer>
+        </HeaderContainer>
+        <Languages />
+        <Description />
+        <Thanks />
+        <Colaboration />
+        <Footer />
+        <Background />
+      </AppContainer>
+    </Provider>
   );
 }
-
-const ThanksContainer = styledComponents.div`
-  font-size: 30px;
-  color: rgb(205, 140, 193);
-  margin-bottom: 40px;
-  font-weight: 600;
-`;
 
 const AppContainer = styledComponents.div`
   padding: 20px;

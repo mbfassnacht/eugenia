@@ -1,21 +1,30 @@
 import styledComponents from "styled-components";
+import { Context } from "./context/context";
+import React from "react";
+import { translate } from "./Translator";
 
 function Colaboration() {
+  const { language } = React.useContext(Context);
+
   return (
     <ColaborationContainer>
-      <Title>Medios para colaborar</Title>
+      <Title>{translate(language, "waysToContribute")}</Title>
       <ColaborationList>
         <ColaborationMethod>
-          <ColaborationTitle>Desde URUGUAY</ColaborationTitle>
+          <ColaborationTitle>
+            {translate(language, "fromUruguay")}
+          </ColaborationTitle>
           <ColaborationDescription>
-            <p>Cuenta BROU</p>
-            <p>A nombre de Florencia Mazetta</p>
-            <p>CA 001361713-0002 (Pesos Uruguayos)</p>
-            <p>CA 001361713-0003 (Dólares)</p>
+            <p>{translate(language, "bankAccount")}</p>
+            <p>{translate(language, "inNameOf")}</p>
+            <p>CA 001361713-0002 ({translate(language, "uruguayanPesos")})</p>
+            <p>CA 001361713-0003 ({translate(language, "dolars")})</p>
           </ColaborationDescription>
         </ColaborationMethod>
         <ColaborationMethod>
-          <ColaborationTitle>Desde el EXTERIOR </ColaborationTitle>
+          <ColaborationTitle>
+            {translate(language, "fromForeinger")}
+          </ColaborationTitle>
           <ColaborationDescription>
             <Link
               target="_blank"
