@@ -48,7 +48,8 @@ const ColaborationList = styledComponents.div`
 
 const Link = styledComponents.a`
   color: rgb(205, 140, 193);
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 24px;
   text-decoration: none;
 `;
 
@@ -69,7 +70,7 @@ const Title = styledComponents.h2`
 const ColaborationContainer = styledComponents.div`
   margin: 40px auto;
   background-color: rgb(253, 240, 212);
-  padding: 10px;
+  padding: 20px;
   border-radius: 40px;
   color: rgb(117, 142, 150);
 `;
