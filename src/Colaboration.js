@@ -38,7 +38,7 @@ function Colaboration() {
                     href="https://mpago.la/1xrx8Lc"
                     target="_blank"
                   >
-                    $ 1.000
+                    $1.000
                   </Link>
                   <LinksItem>
                     <Link
@@ -46,7 +46,7 @@ function Colaboration() {
                       href="https://mpago.la/1eQcgEn"
                       target="_blank"
                     >
-                      $ 500
+                      $500
                     </Link>
                   </LinksItem>
                   <LinksItem>
@@ -55,7 +55,7 @@ function Colaboration() {
                       href="https://mpago.la/2fN5rCQ"
                       target="_blank"
                     >
-                      $ 200
+                      $200
                     </Link>
                   </LinksItem>
                   <LinksItem>
@@ -64,7 +64,7 @@ function Colaboration() {
                       href="https://mpago.la/2uVhY8q"
                       target="_blank"
                     >
-                      $ 100
+                      $100
                     </Link>
                   </LinksItem>
                   <LinksItem>
@@ -73,7 +73,7 @@ function Colaboration() {
                       href="https://mpago.la/1f9BSiq"
                       target="_blank"
                     >
-                      $ 50
+                      $50
                     </Link>
                   </LinksItem>
                 </LinksList>
@@ -125,10 +125,13 @@ const LinksList = styledComponents.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const LinksItem = styledComponents.li`
-
+  padding: 0 8px;
 `;
 
 const Link = styledComponents.a`
