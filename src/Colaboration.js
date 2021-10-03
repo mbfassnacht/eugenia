@@ -10,46 +10,106 @@ function Colaboration() {
     <ColaborationContainer>
       <Title>{translate(language, "waysToContribute")}</Title>
       <ColaborationList>
-        {language !== "pr_BR" && (
-          <ColaborationMethod>
-            <ColaborationTitle>
+        {language !== "pr_BR" && language !== "en_UK" && (
+          <ColaborationGroup>
+            <ColaborationGroupTitle>
               {translate(language, "fromUruguay")}
-            </ColaborationTitle>
-            <ColaborationDescription>
-              <p>{translate(language, "bankAccount")}</p>
-              <p>{translate(language, "inNameOf")}</p>
-              <p>
-                CA 001361713-00002 ({translate(language, "uruguayanPesos")})
-              </p>
-              <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
-            </ColaborationDescription>
-          </ColaborationMethod>
+            </ColaborationGroupTitle>
+            <ColaborationMethod>
+              <ColaborationMethodTitle>
+                {translate(language, "bankAccount")}
+              </ColaborationMethodTitle>
+              <ColaborationMethodDescription>
+                <p>{translate(language, "inNameOf")}</p>
+                <p>
+                  CA 001361713-00002 ({translate(language, "uruguayanPesos")})
+                </p>
+                <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
+              </ColaborationMethodDescription>
+            </ColaborationMethod>
+            <ColaborationMethod>
+              <ColaborationMethodTitle>
+                {translate(language, "mercadoPago")}
+              </ColaborationMethodTitle>
+              <ColaborationMethodDescription>
+                <LinksList>
+                  <Link
+                    rel="noreferrer"
+                    href="https://mpago.la/1xrx8Lc"
+                    target="_blank"
+                  >
+                    $ 1.000
+                  </Link>
+                  <LinksItem>
+                    <Link
+                      rel="noreferrer"
+                      href="https://mpago.la/1eQcgEn"
+                      target="_blank"
+                    >
+                      $ 500
+                    </Link>
+                  </LinksItem>
+                  <LinksItem>
+                    <Link
+                      rel="noreferrer"
+                      href="https://mpago.la/2fN5rCQ"
+                      target="_blank"
+                    >
+                      $ 200
+                    </Link>
+                  </LinksItem>
+                  <LinksItem>
+                    <Link
+                      rel="noreferrer"
+                      href="https://mpago.la/2uVhY8q"
+                      target="_blank"
+                    >
+                      $ 100
+                    </Link>
+                  </LinksItem>
+                  <LinksItem>
+                    <Link
+                      rel="noreferrer"
+                      href="https://mpago.la/1f9BSiq"
+                      target="_blank"
+                    >
+                      $ 50
+                    </Link>
+                  </LinksItem>
+                </LinksList>
+              </ColaborationMethodDescription>
+            </ColaborationMethod>
+          </ColaborationGroup>
         )}
         {language === "pr_BR" && (
-          <ColaborationMethod>
-            <ColaborationTitle>
+          <ColaborationGroup>
+            <ColaborationGroupTitle>
               {translate(language, "fromBrazil")}
-            </ColaborationTitle>
-            <ColaborationDescription>
-              <p>{translate(language, "bankAccount")}</p>
-              <p>{translate(language, "inNameOf")}</p>
-            </ColaborationDescription>
-          </ColaborationMethod>
+            </ColaborationGroupTitle>
+            <ColaborationMethod>
+              <ColaborationMethodDescription>
+                <p>{translate(language, "bankAccount")}</p>
+                <p>{translate(language, "inNameOf")}</p>
+              </ColaborationMethodDescription>
+            </ColaborationMethod>
+          </ColaborationGroup>
         )}
-        <ColaborationMethod>
-          <ColaborationTitle>
+        <ColaborationGroup>
+          <ColaborationGroupTitle>
             {translate(language, "fromForeinger")}
-          </ColaborationTitle>
-          <ColaborationDescription>
-            <Link
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.paypal.com/paypalme/eugesosgenia"
-            >
-              Paypal
-            </Link>
-          </ColaborationDescription>
-        </ColaborationMethod>
+          </ColaborationGroupTitle>
+          <ColaborationMethod>
+            <ColaborationMethodDescription>
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.paypal.com/paypalme/eugesosgenia"
+              >
+                Paypal
+              </Link>
+            </ColaborationMethodDescription>
+          </ColaborationMethod>
+        </ColaborationGroup>
       </ColaborationList>
     </ColaborationContainer>
   );
@@ -61,6 +121,16 @@ const ColaborationList = styledComponents.div`
   flex-wrap: wrap;
 `;
 
+const LinksList = styledComponents.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const LinksItem = styledComponents.li`
+
+`;
+
 const Link = styledComponents.a`
   color: rgb(205, 140, 193);
   font-weight: 800;
@@ -68,14 +138,32 @@ const Link = styledComponents.a`
   text-decoration: none;
 `;
 
+const ColaborationGroup = styledComponents.div`
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+
+`;
+
 const ColaborationMethod = styledComponents.div`
+  padding-bottom: 4px;
+  margin-bottom: 16px;
 
 `;
 
-const ColaborationDescription = styledComponents.div`
+const ColaborationMethodDescription = styledComponents.div`
+  p {
+    margin-top: 4px;
+    margin-bottom: 4px;;
+  }
 `;
 
-const ColaborationTitle = styledComponents.h4`
+const ColaborationMethodTitle = styledComponents.h4`
+  margin-top: 16px;
+  margin-bottom: 4px;
+`;
+
+const ColaborationGroupTitle = styledComponents.h3`
+  margin-bottom: 4px;
 `;
 
 const Title = styledComponents.h2`
