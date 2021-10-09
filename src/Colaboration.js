@@ -6,6 +6,29 @@ import { translate } from "./Translator";
 function Colaboration() {
   const { language } = React.useContext(Context);
 
+  const mercadoPago = [
+    {
+      amount: "$1.000",
+      link: "https://mpago.la/1xrx8Lc",
+    },
+    {
+      amount: "$500",
+      link: "https://mpago.la/1eQcgEn",
+    },
+    {
+      amount: "$200",
+      link: "https://mpago.la/2fN5rCQ",
+    },
+    {
+      amount: "$100",
+      link: "https://mpago.la/2uVhY8q",
+    },
+    {
+      amount: "$50",
+      link: "https://mpago.la/1f9BSiq",
+    },
+  ];
+
   return (
     <ColaborationContainer>
       <Title>{translate(language, "waysToContribute")}</Title>
@@ -15,70 +38,74 @@ function Colaboration() {
             <ColaborationGroupTitle>
               {translate(language, "fromUruguay")}
             </ColaborationGroupTitle>
-            <ColaborationMethod>
-              <ColaborationMethodTitle>
-                {translate(language, "bankAccount")}
-              </ColaborationMethodTitle>
-              <ColaborationMethodDescription>
-                <p>{translate(language, "inNameOf")}</p>
-                <p>
-                  CA 001361713-00002 ({translate(language, "uruguayanPesos")})
-                </p>
-                <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
-              </ColaborationMethodDescription>
-            </ColaborationMethod>
-            <ColaborationMethod>
-              <ColaborationMethodTitle>
-                {translate(language, "mercadoPago")}
-              </ColaborationMethodTitle>
-              <ColaborationMethodDescription>
-                <LinksList>
-                  <Link
-                    rel="noreferrer"
-                    href="https://mpago.la/1xrx8Lc"
-                    target="_blank"
-                  >
-                    $1.000
-                  </Link>
-                  <LinksItem>
-                    <Link
-                      rel="noreferrer"
-                      href="https://mpago.la/1eQcgEn"
-                      target="_blank"
-                    >
-                      $500
-                    </Link>
-                  </LinksItem>
-                  <LinksItem>
-                    <Link
-                      rel="noreferrer"
-                      href="https://mpago.la/2fN5rCQ"
-                      target="_blank"
-                    >
-                      $200
-                    </Link>
-                  </LinksItem>
-                  <LinksItem>
-                    <Link
-                      rel="noreferrer"
-                      href="https://mpago.la/2uVhY8q"
-                      target="_blank"
-                    >
-                      $100
-                    </Link>
-                  </LinksItem>
-                  <LinksItem>
-                    <Link
-                      rel="noreferrer"
-                      href="https://mpago.la/1f9BSiq"
-                      target="_blank"
-                    >
-                      $50
-                    </Link>
-                  </LinksItem>
-                </LinksList>
-              </ColaborationMethodDescription>
-            </ColaborationMethod>
+            <ColaborationFlexContainer>
+              <ColaborationMethod>
+                <ColaborationMethodTitle>
+                  {translate(language, "bankAccount")}
+                </ColaborationMethodTitle>
+                <ColaborationMethodDescription>
+                  <p>{translate(language, "inNameOf")}</p>
+                  <p>
+                    CA 001361713-00002 ({translate(language, "uruguayanPesos")})
+                  </p>
+                  <p>CA 001361713-00003 ({translate(language, "dolars")})</p>
+                </ColaborationMethodDescription>
+              </ColaborationMethod>
+              <ColaborationMethod>
+                <ColaborationMethodTitle>
+                  {translate(language, "mercadoPago")}
+                </ColaborationMethodTitle>
+                <ColaborationMethodDescription>
+                  <LinksList>
+                    {mercadoPago.map((mercadoPagoItem) => (
+                      <LinksItem key={mercadoPagoItem.amount}>
+                        <Link
+                          rel="noreferrer"
+                          href={mercadoPagoItem.link}
+                          target="_blank"
+                        >
+                          {mercadoPagoItem.amount}
+                        </Link>
+                      </LinksItem>
+                    ))}
+                  </LinksList>
+                </ColaborationMethodDescription>
+              </ColaborationMethod>
+              <ColaborationMethod>
+                <ColaborationMethodTitle>
+                  {translate(language, "paganza")}
+                </ColaborationMethodTitle>
+                <ColaborationMethodDescription>
+                  <PaganzaList>
+                    <li>
+                      <NumberBullet>1 </NumberBullet>
+                      {translate(language, "paganza_1")}
+                    </li>
+                    <li>
+                      <NumberBullet>2 </NumberBullet>
+                      {translate(language, "paganza_2")}
+                    </li>
+                    <li>
+                      <NumberBullet>3 </NumberBullet>
+                      {translate(language, "paganza_3")}
+                    </li>
+                    <li>
+                      <NumberBullet>4 </NumberBullet>
+                      {translate(language, "paganza_4")}
+                    </li>
+                  </PaganzaList>
+                </ColaborationMethodDescription>
+              </ColaborationMethod>
+              <ColaborationMethod>
+                <ColaborationMethodTitle>
+                  {translate(language, "abitab")}
+                </ColaborationMethodTitle>
+                <ColaborationMethodDescription>
+                  <p>{translate(language, "abitabName")}</p>
+                  <p>{translate(language, "abitabNumber")}</p>
+                </ColaborationMethodDescription>
+              </ColaborationMethod>
+            </ColaborationFlexContainer>
           </ColaborationGroup>
         )}
         {language === "pr_BR" && (
@@ -115,6 +142,21 @@ function Colaboration() {
   );
 }
 
+const PaganzaList = styledComponents.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const ColaborationFlexContainer = styledComponents.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const NumberBullet = styledComponents.strong`
+  color: rgb(205, 140, 193);
+`;
+
 const ColaborationList = styledComponents.div`
   display: flex;
   justify-content: space-around;
@@ -150,7 +192,9 @@ const ColaborationGroup = styledComponents.div`
 const ColaborationMethod = styledComponents.div`
   padding-bottom: 4px;
   margin-bottom: 16px;
-
+  flex: 1 1 0;
+  width: 0;
+  min-width: 260px;
 `;
 
 const ColaborationMethodDescription = styledComponents.div`
