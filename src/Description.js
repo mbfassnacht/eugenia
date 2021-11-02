@@ -8,16 +8,30 @@ function Description() {
 
   return (
     <div className="description">
-      <Paragraph>{translate(language, "descriptionOne")}</Paragraph>
-      <Paragraph>{translate(language, "descriptionTwo")}</Paragraph>
-      <Paragraph>{translate(language, "descriptionThree")}</Paragraph>
-      <Paragraph>{translate(language, "descriptionFour")}</Paragraph>
+      <ParagraphBox>{translate(language, "descriptionOne")}</ParagraphBox>
+      <ParagraphBox>{translate(language, "descriptionTwo")}</ParagraphBox>
+      <ParagraphBox>
+        <Paragraph>{translate(language, "descriptionThree")}</Paragraph>
+        <ParagraphLineThrough>
+          {translate(language, "descriptionFour")}
+        </ParagraphLineThrough>
+        <Paragraph>{translate(language, "descriptionFive")}</Paragraph>
+      </ParagraphBox>
+      <ParagraphBox>{translate(language, "descriptionSix")}</ParagraphBox>
+      <ParagraphBox>{translate(language, "clarification")}</ParagraphBox>
     </div>
   );
 }
 
-const Paragraph = styledComponents.div`
+const ParagraphBox = styledComponents.div`
   margin-bottom: 20px;
+`;
+
+const Paragraph = styledComponents.span`
+`;
+
+const ParagraphLineThrough = styledComponents.span`
+  text-decoration:line-through;
 `;
 
 export default Description;
