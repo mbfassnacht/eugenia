@@ -1,6 +1,5 @@
 import styledComponents from "styled-components";
 import Background from "./Background";
-import Colaboration from "./Colaboration";
 import Languages from "./Languages";
 import Description from "./Description";
 import Footer from "./Footer";
@@ -20,7 +19,6 @@ function App() {
         <Languages />
         <Description />
         <Thanks />
-        <Colaboration />
         <Footer />
         <Background />
       </AppContainer>
